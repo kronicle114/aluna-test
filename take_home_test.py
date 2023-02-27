@@ -53,7 +53,7 @@ def validate_identifier(identifier) -> Any:
 class ValidateStoringIdentifier(unittest):
     @pytest.fixture()
     def mock_uid_info(self):
-        with open("resources/mock_data.json") as f:
+        with open("mock_data.json") as f:
             return json.load(f)
 
     def success(self):
